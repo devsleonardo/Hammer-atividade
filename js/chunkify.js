@@ -1,10 +1,9 @@
 const chunkify = (inputArray, perChunk) => {
   let newArray = [];
   let n = inputArray;
-  let nLength = inputArray.length;
   let p = perChunk;
 
-  for (let i = 0; i < nLength; i++) {
+  for (let i = 0; i < n.length; i++) {
     newArray.push(n.slice(i, (i += p)));
   }
   return newArray;
