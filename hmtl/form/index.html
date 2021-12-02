@@ -1,32 +1,207 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>list</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="../form/style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-  </head>
-  <body>
-    <main>
-      <section>
-        oi
-      </section>
-    </main>
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <title>form</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="../form/style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="text-left">
+              <h3>Endereço de faturamento</h3>
+              <div class="row">
+                <div class="col-md-6 pb-3 pt-3">
+                  <label>Nome próprio</label>
+                  <input type="text" class="form-control" placeholder="Nome Proprio" />
+                </div>
+                <div class="col-md-6 pb-3 pt-3">
+                  <label class="">Apelido</label>
+                  <input type="text" class="form-control" placeholder="Apelido" />
+                </div>
+              </div>
+              <label>Nome do usuário</label>
+              <div class="input-group">
+                <div class="input-group-prepend mb-3">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Nome do usuário" />
+              </div>
+            </div>
+            <label>Email <span class="text-muted">(opcional)</span></label>
+            <input type="email" class="form-control mb-3" placeholder="nome@exemplo.com" />
+            <label>Endereço </label>
+            <input type="text" class="form-control mb-3" placeholder="Rua Borboletas Psicodélicas , 1234" />
+            <label>Complemento <span class="text-muted">(opcional)</span></label>
+            <input type="text" class="form-control mb-3" placeholder="Apartamento ou lote" />
+            <div class="row">
+              <div class="col-md-5 pb-3 ">
+                <label>País</label>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>País...</option>
+                  <option value="1">Brasil</option>
+                  <option value="2">EUA</option>
+                  <option value="3">Grécia</option>
+                  <option value="3">Japão</option>
+                </select>
+              </div>
+              <div class="col-md-4 pb-3 ">
+                <label class="">Estado / UF</label>
+                <select class="custom-select" id="inputGroupSelect02">
+                  <option selected>Estado / UF...</option>
+                  <option value="1">Rio Grande do Sul</option>
+                  <option value="2">Obamá</option>
+                  <option value="3">Dolores Fuertes de Barriga</option>
+                  <option value="3">Remédio Amargo</option>
+                </select>
+              </div>
+              <div class="col-md-3 pb-3 ">
+                <label class="">CEP</label>
+                <input type="text" class="form-control" placeholder="00000-000" />
+              </div>
+            </div>
+            <hr>
+            <div class="custom-control custom-checkbox ">
+              <input class="custom-control-input" type="checkbox" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Endereço de envio é o mesmo que meu endereço de
+                cobrança.</label>
+            </div>
+            <div class="custom-control custom-checkbox ">
+              <input class="custom-control-input" type="checkbox" id="customCheck2">
+              <label class="custom-control-label" for="customCheck2">Guarde essas informações para a próxima vez</label>
+            </div>
+            <hr>
+            <h3 class="">Pagamento</h3>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio1">Cartão de Credito</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio2">Cartão de Debito</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio3">PayPal</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio4">Pix</label>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pb-3 pt-3">
+                <label>Nome no cartão</label>
+                <input type="text" class="form-control" placeholder="Colápso Cardíaco da Silva" />
+                <small class="text-muted"> Nome completo como exibido no cartão</small>
+              </div>
+              <div class="col-md-6 pb-3 pt-3">
+                <label>Número do cartão de crédito</label>
+                <input type="text" class="form-control" placeholder="0000 0000 0000 0000" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 pb-3 pt-3">
+                <label>Expiração</label>
+                <input type="text" class="form-control" placeholder="00/00" />
+
+              </div>
+              <div class="col-md-3 pb-3 pt-3">
+                <label class="">CVV</label>
+                <input type="text" class="form-control" placeholder="000" />
+              </div>
+            </div>
+            <hr>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Comprar</button>
+
+          </div>
+
+          <div class="col-md-4">
+            <div class="text-left">
+              <div class="">
+                <div class="group text-right">
+                  <h3 class="text-muted d-flex justify-content-between align-items-center">
+                    Carrinho <span class="badge badge-dark">5959</span>
+                  </h3>
+                </div>
+                <ul class="list-group py-3">
+                  <li class="list-group-item d-flex justify-content-between ">
+                    <div>
+                      <h6>Primeiro Produto</h6>
+                      <small class="text-muted">Breve descrição</small>
+                    </div>
+                    <span class="text-muted">R$ 6,00</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between ">
+                    <div>
+                      <h6>Segundo Produto</h6>
+                      <small class="text-muted">Descrição</small>
+                    </div>
+                    <span class="text-muted">R$ 900,00</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between ">
+                    <div>
+                      <h6>Terceiro Produto</h6>
+                      <small class="text-muted">Descrição</small>
+                    </div>
+                    <span class="text-muted">R$ 5,00</span>
+                  </li>
+                  <li class="list-group-item-secondary list-group-item d-flex justify-content-between ">
+                    <div>
+                      <h6 class=" text-success">Código Promocional</h6>
+                      <small class="text-muted">Descrição</small>
+                    </div>
+                    <span class="text-success ">-200,00R$</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between ">
+                    <div>
+                      <h6>Total (BRL)</h6>
+
+                    </div>
+                    <span class="font-weight-bold">R$ 711,00</span>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="input-group py-3">
+                <input type="text" class="form-control " placeholder="Cupom">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-secondary ">Resgatar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
